@@ -16,6 +16,12 @@ mvn clean verify -Dcucumber.options="--tags @search"
 # reporting
 used Serenity bdd for reporting
 reports can be found under "target" ->"site"->"serenity"->"index.html"
+# Test Execution Report
+Scenario
+![image](https://user-images.githubusercontent.com/48619025/139586941-d097e8bb-dcc7-4545-8342-c6558409680e.png)
+Steps
+![image](https://user-images.githubusercontent.com/48619025/139586955-a2e592cf-5967-4351-9f14-8d44a419f917.png)
+
 
 # Test summary
 Framework tests the ability of searching an item, selecting and verifying for similar Ads
