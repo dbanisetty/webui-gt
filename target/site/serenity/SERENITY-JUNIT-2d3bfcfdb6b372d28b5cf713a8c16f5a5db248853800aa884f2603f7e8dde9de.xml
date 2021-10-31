@@ -1,4 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Validate a specific search feature in Gumtree and verify search results" skipped="0" tests="1" time="23.33" timestamp="2021-10-304 10:50:29"><testcase name="Search Gumtree for &quot;Sennheiser Headphones&quot; in &quot;Electronics &amp; Computers&quot; category and access search results"><failure type="java.lang.AssertionError"/><system-err>null
-step_defs.UiStepDefinitions.verify_ad_details_page_opens(UiStepDefinitions.java:65)
-✽.Then verify ad details page opens(gumtree-search-results.feature:10)
-</system-err></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Validate a specific search feature in Gumtree and verify search results" skipped="0" tests="1" time="25.13" timestamp="2021-11-305 12:23:21"><testcase name="Search Gumtree for &quot;Sennheiser Headphones&quot; in &quot;Electronics &amp; Computers&quot; category and access search results"/></testsuite>

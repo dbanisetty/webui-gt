@@ -1,20 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestRunner
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 2, Errors: 0, Skipped: 2, Time elapsed: 28.197 sec <<< FAILURE!
-Then verify ad details page opens(Scenario: Search Gumtree for "Sennheiser Headphones" in "Electronics & Computers" category and access search results)  Time elapsed: 0.006 sec  <<< FAILURE!
-java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at step_defs.UiStepDefinitions.verify_ad_details_page_opens(UiStepDefinitions.java:65)
-	at ✽.Then verify ad details page opens(gumtree-search-results.feature:10)
-
-Scenario: Search Gumtree for "Sennheiser Headphones" in "Electronics & Computers" category and access search results  Time elapsed: 0.006 sec  <<< FAILURE!
-java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at step_defs.UiStepDefinitions.verify_ad_details_page_opens(UiStepDefinitions.java:65)
-	at ✽.Then verify ad details page opens(gumtree-search-results.feature:10)
-
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 28.302 sec

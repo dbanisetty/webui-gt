@@ -2,12 +2,10 @@ import cucumber.api.CucumberOptions;
 
 import net.serenitybdd.cucumber.CucumberWithSerenity;
 import org.junit.AfterClass;
-import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import utilities.CommonEvents;
-import org.junit.BeforeClass;
-import org.junit.runner.RunWith;
+
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
@@ -22,6 +20,6 @@ public class TestRunner {
 
     @AfterClass()
     public static void tearDown() {
-     //  CommonEvents.closeDriver();
+       CommonEvents.closeDriver();
     }
 }
