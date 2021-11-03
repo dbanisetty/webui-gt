@@ -39,5 +39,4 @@ public static void getSimilarAds(){
     driver.findElements(similarAds);
 }
 
-
 }

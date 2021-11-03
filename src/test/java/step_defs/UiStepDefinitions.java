@@ -16,6 +16,7 @@ public class UiStepDefinitions {
     WebDriver driver = CommonEvents.getDriver();
     private CommonEvents com = new CommonEvents();
     String actualTitle;
+    String lowerTitle;
 
     @Given("^user visits gumtree homepage$")
     public void user_visits_gumtree_homepage(){
@@ -52,12 +53,14 @@ public class UiStepDefinitions {
     public void verify_ad_details_page_opens(){
         String expectedTitle = "sennheiser";
         try{
-        actualTitle = driver.getTitle().toLowerCase();
-        System.out.println("Ad details page title is: "+ actualTitle);}
+        actualTitle = driver.getTitle();
+        lowerTitle = actualTitle.toLowerCase();
+        System.out.println("Ad details page title is: "+ lowerTitle);}
         catch (org.openqa.selenium.StaleElementReferenceException ex){
-            actualTitle = driver.getTitle().toLowerCase();
-            System.out.println("Ad details page title is: "+ actualTitle); }
-        Assert.assertTrue(actualTitle.contains(expectedTitle));
+            actualTitle = driver.getTitle();
+                    lowerTitle = actualTitle.toLowerCase();
+            System.out.println("Ad details page title is: "+ lowerTitle); }
+        Assert.assertTrue(lowerTitle.contains(expectedTitle));
 
     }
 
@@ -66,7 +69,7 @@ public class UiStepDefinitions {
         String breadcrumbAdId = ResultsPage.getAdId();
         String breadcrumbId = breadcrumbAdId.substring(6);
         System.out.println("Numeric Breadcrumb Ad Id is : "+ breadcrumbId);
-        Assert.assertTrue(actualTitle.contains(breadcrumbId));
+        Assert.assertTrue(lowerTitle.contains(breadcrumbId));
 
     }
 
